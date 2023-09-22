@@ -1,3 +1,8 @@
+<?php
+    $nama = "Agil Zulfa";
+    $hobi = "Futsal";
+    $alamat = "Bogor";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,7 @@
 <body>
     <h2> <?php echo "Biodata"?> </h2>
     
-
+    <div class="biodata">
     <TABle>
         <tr>
         <th> Nama</th>
@@ -18,12 +23,13 @@
         </tr>
 
         <tr>
-            <td>Agil Zulfa</td>
+            <td><?php echo $nama ?></td>
             <td>Bogor, 16 Oktober 2004</td>
-            <td>Pungsal</td>
-            <td>Bogor</td>
+            <td><?php echo $hobi ?></td>
+            <td><?php echo $alamat ?></td>
         </tr>
     </TABle>
+    </div>
 </body>
 </html>
 
@@ -32,9 +38,15 @@
         text-align: center;
     }
 
+    .biodata{
+        margin-left: 30% ;
+    }
+
     table, th, td, tr {
         justify-content: center;
         border: 1px solid black;
         border-collapse: collapse;
+        padding: 10px 20px;
     }
 </style>
+
